@@ -7,6 +7,22 @@ The goal is to set up a small infrastructure composed of multiple services runni
 This project focuses on understanding how containers work, how services communicate with each other, and how to configure a containerized environment.
 The infrastructure includes a web server, a database, and a content management system, all built from custom Docker images.
 
+### Technical Choices
+**Virtual Machines vs Docker**  
+Docker containers are lightweight, start quickly, and allow easy communication between services without running full OS instances.
+
+**Secrets vs Environment Variables**  
+Environment variables were used to configure database credentials and WordPress settings.
+Secrets were not required for this local setup, but are recommended in production.
+
+**Docker Network vs Host Network**  
+A Docker bridge network was used to connect the containers. This keeps each service isolated while allowing them to communicate.
+Using the host network would reduce isolation and increase risk of port conflicts.
+
+**Docker Volumes vs Bind Mounts**  
+Docker volumes were used for persistent data, such as the MariaDB database and WordPress uploads.
+Bind mounts were used only for configuration files during development to allow quick updates without rebuilding images.
+
 ## Instructions
 
 ### Prerequisites
@@ -40,4 +56,3 @@ make down
 AI tools were used to:
 - Get detailed explanations on topics that were difficult to find documented
 - Clarify specific doubts during the development of the project
-
