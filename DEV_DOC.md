@@ -4,7 +4,7 @@
 
 **Requirements:** Docker, Docker Compose, Make, Git.
 
-The domain must resolve locally. Add the following line to `/etc/hosts` on your VM:
+The domain must resolve locally. Add the following line to `/etc/hosts` on your machine:
 ```
 127.0.0.1   <your_login>.42.fr
 ```
