@@ -71,12 +71,8 @@ cp srcs/.env.example srcs/.env
 
 ## 5. Checking If Services Are Running Correctly
 
-You can verify that all services are up and working with the following command:
-
 Open a terminal in the project directory and run:
 
 ```bash
-docker compose -f srcs/docker-compose.yml ps
+make status
 ```
-
-You should see all containers listed with **State: Up**.

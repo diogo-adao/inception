@@ -2,7 +2,7 @@
 
 ## Environment Setup
 
-**Requirements:** Docker, Docker Compose v2, Make, Git. The project must run inside a Virtual Machine.
+**Requirements:** Docker, Docker Compose, Make, Git.
 
 The domain must resolve locally. Add the following line to `/etc/hosts` on your VM:
 ```
@@ -19,12 +19,11 @@ The domain must resolve locally. Add the following line to `/etc/hosts` on your 
 
 **Note:** HTTP access is disabled. The only entrypoint into the infrastructure is HTTPS on port 443 through the NGINX container.
 
----
 
 ## Build and Launch
 
 ```bash
-make        # builds all images and starts containers in detached mode
+make        # builds all images and starts containers
 make down   # stops and removes containers and the network
 make stop   # stops containers without removing them
 make start  # restarts previously stopped containers
@@ -35,7 +34,6 @@ All credentials are read from `srcs/.env` at startup. If the `.env` file is miss
 
 **Important:** Once the volumes are initialized, user and database creation only happens on the first run. If you bring the project down with `make down` and back up with `make`, the existing volume data is reused — no new users or databases are created. This is expected behavior.
 
----
 
 ## Managing Containers and Volumes
 
@@ -53,7 +51,6 @@ docker volume ls
 docker volume inspect <volume_name>
 ```
 
----
 
 ## Data Storage and Persistence
 
