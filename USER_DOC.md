@@ -7,11 +7,11 @@ This document explains how to use and manage the project stack from an end-user 
 
 The project stack includes 3 main services:
 
-- **NGINX** – The web server that handles incoming requests, delivers the website content to users, and routes traffic to the appropriate services. It ensures fast, secure, and reliable access to the website.
+- **NGINX** – The web server that ensures fast, secure, and reliable access to the website.
 
-- **MariaDB** – The relational database that stores all application data, including posts, pages, user accounts, and settings. It works behind the scenes to keep your website data organized and persistent.
+- **MariaDB** – The database that stores all application data, including posts, pages, user accounts, and settings.
 
-- **WordPress** – The content management system (CMS) that powers the website and its administration panel, allowing you to create, edit, and manage content, users, and site settings.
+- **WordPress** – Lets you manage content and control the website through the admin panel.
 
 
 ## 2. Starting and Stopping the Project
@@ -33,11 +33,10 @@ make down
 
 - **Website:** Open a browser and go to:  
   [https://diolivei.42.fr](https://diolivei.42.fr)  
-  > Make sure to use `https` to connect to the right port.
 
 - **Admin Panel:** Open a browser and go to:  
   [https://diolivei.42.fr/wp-admin](https://diolivei.42.fr/wp-admin)  
-  Use your administrator credentials to log in and manage the website.
+  > Use your administrator credentials to log in and manage the website.
 
 
 ## 4. Locating and Managing Credentials

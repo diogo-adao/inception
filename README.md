@@ -50,7 +50,6 @@ make down
 - [How to install Wordpress](https://developer.wordpress.org/cli/commands/core/)
 - [How to install MariaDB](https://mariadb.com/docs/server/mariadb-quickstart-guides/installing-mariadb-server-guide)
 - [Project guide](https://medium.com/@ssterdev/inception-guide-42-project-part-i-7e3af15eb671)
-- [Repository example](https://github.com/Forstman1/inception-42)
 
 ### Use of AI
 AI tools were used to:
